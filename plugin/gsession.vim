@@ -430,7 +430,7 @@ nnoremap <leader>sE    :GSessionEliminateAll<CR>
 nnoremap <leader>sm    :GSessionListLocal<CR>
 
 " My stuff
-nnoremap <leader>sl :GlobalSessionLoad<CR>
+nnoremap <leader>sa :GlobalSessionLoad<CR>
 com! GlobalSessionLoad    :cal s:load_session_global()
 
 fun! s:load_session_global()
