@@ -428,3 +428,12 @@ nnoremap <leader>sE    :GSessionEliminateAll<CR>
 
 
 nnoremap <leader>sm    :GSessionListLocal<CR>
+
+" My stuff
+nnoremap <leader>sl :GlobalSessionLoad<CR>
+com! GlobalSessionLoad    :cal s:load_session_global()
+
+fun! s:load_session_global()
+  let sname = s:session_file()
+  cal s:load_session( sname )
+endf
